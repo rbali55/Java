@@ -1,0 +1,19 @@
+# Airline Queue ADT
+
+This program executes and outputs the total length of the simulation, the maximum lengths of
+the first class queue and coach class queue, the maximum service time for a passenger, the
+average service time for a passenger, and the number of first and coach class passengers in an
+airline check in queue.
+
+The flow of the program is as follows: an abstract queue is created in the Check_In_Queue
+class that creates a queue array which holds the size and arrival times for passengers. It
+implements a queue interface that enables the addition to a tail and removal of the head from
+the queue. The Passenger class is the abstract data class that creates the passenger object
+and determines if the passenger is a first class passenger or not. It also provides a random
+arrival time method in the case of a non-average case arrival time. Along a similar vein, the
+ServiceStation class class does all the things the passenger class does but also adds
+passengers to service stations and removes them from the queue. ServicedPassengers is a
+class that removes passengers from the service stations and records the maximum and average
+times it took for a passenger to be completely serviced. The simulator class simulates and runs
+the aforementioned classes and returns the data for arrival rates and times and number of
+passengers in first and coach classes.
